@@ -1,0 +1,65 @@
+.bg-home-png {
+    background-image: url('./assests/bg-hero.png');
+    background-size: cover;
+}
+
+.logo {
+    font-size: calc(1.0rem + 1.0vw);
+}
+
+.home-text {
+    font-size: calc(0.475rem + 1.7vw);
+    text-align: center;
+}
+
+.about-text {
+    font-size: calc(0.475rem + 1.2vw);
+    text-align: center;
+}
+
+.section-heading {
+    font-size: calc(0.475rem + 1.2vw);
+    font-weight: 500;
+    color: black;
+    text-align: center;
+}
+
+.prev-arrow {
+    position: absolute;
+    bottom: -20px;
+    left: 48%;
+    transform: translateX(-50%) translateY(50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.next-arrow {
+    position: absolute;
+    bottom: -20px;
+    left: 52%;
+    transform: translateX(-50%) translateY(50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.prev-arrow {
+    transform: translateX(-50%) translateY(50%);
+}
+
+.next-arrow {
+    transform: translateX(-50%) translateY(50%);
+}
