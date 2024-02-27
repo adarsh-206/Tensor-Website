@@ -1,4 +1,25 @@
 import React from 'react';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
+function SocialMediaIcons() {
+    return (
+        <div className="flex items-center space-x-4">
+            <SocialMediaIcon icon={<FaFacebookF />} link="#" />
+            <SocialMediaIcon icon={<FaTwitter />} link="#" />
+            <SocialMediaIcon icon={<FaInstagram />} link="#" />
+            <SocialMediaIcon icon={<FaLinkedinIn />} link="#" />
+        </div>
+    );
+}
+
+function SocialMediaIcon({ icon, link }) {
+    return (
+        <a href={link} target="_blank" rel="noopener noreferrer" className="block p-2 bg-white text-homeBg hover:bg-blue-500 hover:text-white rounded-full transition duration-300">
+            {icon}
+        </a>
+    );
+}
 
 function Footer() {
     return (
@@ -13,30 +34,25 @@ function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-2">What we do</h3>
                         <ul className="text-sm">
-                            <li>Service 1</li>
-                            <li>Service 2</li>
-                            <li>Service 3</li>
+                            <li>Home</li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold mb-2">Who we are</h3>
                         <ul className="text-sm">
-                            <li>About Us</li>
+                            <li className='mb-2'>About Us</li>
                             <li>Our Team</li>
-                            <li>Careers</li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold mb-2">Our works</h3>
                         <ul className="text-sm">
-                            <li>Project 1</li>
-                            <li>Project 2</li>
-                            <li>Project 3</li>
+                            <li><Link to="/products">Products</Link></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold mb-2">Follow us</h3>
-                        <p className="text-sm">Social Media Links</p>
+                        <SocialMediaIcons />
                     </div>
                 </div>
             </div>
