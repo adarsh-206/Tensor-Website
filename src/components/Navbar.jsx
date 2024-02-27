@@ -29,7 +29,7 @@ function Navbar() {
             <div className='flex space-x-4 text-navText'>
                 <Link to="/" className={`hover:text-white ${location.pathname === '/' ? 'text-white' : ''}`}>Home</Link>
                 <Link to="/about" className={`hover:text-white ${location.pathname === '/about' ? 'text-white' : ''}`}>About us</Link>
-                <Link to="/products" className={`hover:text-white ${location.pathname === '/products' ? 'text-white' : ''}`}>Our Works</Link>
+                <Link to="/products" className={`hover:text-white ${location.pathname === '/products' ? 'text-white' : ''}`}>Products</Link>
                 <Link to="/blogs" className={`hover:text-white ${location.pathname === '/blogs' ? 'text-white' : ''}`}>Blogs</Link>
                 <Link to="/contact" className={`hover:text-white ${location.pathname === '/contact' ? 'text-white' : ''}`}>Contact Us</Link>
             </div>
