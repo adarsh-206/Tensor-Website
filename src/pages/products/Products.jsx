@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import AboutBg from '../../assests/aboutbg3.png'
+import AboutBg from '../../assests/products.png'
 import products from './ProductData';
 
 function ProductBox({ product }) {

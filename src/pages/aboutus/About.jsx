@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutBg from '../../assests/aboutbg3.png'
+import AboutBg from '../../assests/about.png'
 
 function About() {
     return (

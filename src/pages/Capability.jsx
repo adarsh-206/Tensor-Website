@@ -47,9 +47,10 @@ function Capability() {
     return (
         <div className='bg-bgLight py-3 mt-[2rem]'>
             <div className='flex flex-col items-center mt-[1rem] mb-[2rem]'>
-                <div className='border border-homeBg rounded-2xl px-2 py-1 mb-3'>
-                    <p className='text-homeBg'>Our Capabilities</p>
+                <div className='border border-homeBg rounded-2xl px-2 py-1 mb-3 hover:bg-homeBg'>
+                    <p className='text-homeBg hover:text-white'>Our Capabilities</p>
                 </div>
+                <p className='text-lg font-[500] py-1 mb-4'>Unlocking limitless possibilities through cutting-edge artificial intelligence solutions</p>
                 <div className="flex flex-wrap justify-center">
                     {cardsData.map(card => (
                         <div key={card.id} className="m-4">

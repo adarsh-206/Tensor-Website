@@ -11,8 +11,8 @@ function OurTeam() {
     return (
         <div className='px-3 py-5 mt-[2rem]'>
             <div className='flex justify-center items-center my-2'>
-                <div className='border border-homeBg rounded-2xl px-2 py-1 mb-3'>
-                    <p className='text-homeBg text-center'>Our Team</p>
+                <div className='border border-homeBg rounded-2xl px-2 py-1 mb-3 hover:bg-homeBg'>
+                    <p className='text-homeBg text-center hover:text-white'>Our Team</p>
                 </div>
             </div>
             <div className='flex flex-wrap'>

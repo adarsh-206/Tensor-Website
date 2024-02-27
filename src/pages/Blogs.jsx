@@ -1,4 +1,5 @@
 import React from 'react';
+import blogData from './Blogs/BlogData';
 
 function Blog() {
     // Sample blog data
@@ -12,19 +13,21 @@ function Blog() {
     return (
         <div className='px-3 py-5 bg-bgLight mt-[2rem]'>
             <div className='flex justify-center items-center my-2'>
-                <div className='border border-homeBg rounded-2xl px-2 py-1 mb-3'>
-                    <p className='text-homeBg text-center'>Blogs</p>
+                <div className='border border-homeBg rounded-2xl px-2 py-1 mb-3 hover:bg-homeBg'>
+                    <p className='text-homeBg text-center hover:text-white'>Blogs</p>
                 </div>
             </div>
-            <div className='flex flex-wrap'>
-                {blogs.map(blog => (
-                    <div key={blog.id} className='w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2'>
-                        <div className='bg-white rounded-lg overflow-hidden'>
+            <div className='flex flex-wrap justify-center space-x-8'>
+                {blogData.map(blog => (
+                    <div key={blog.id} className='w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2 flex justify-center'>
+                        <div className='bg-white rounded-lg shadow-lg overflow-hidden h-full'>
                             <img src={blog.image} alt={blog.title} className='w-full h-40 object-cover' />
                             <div className='p-4'>
-                                <h3 className='text-xl font-semibold mb-2'>{blog.title}</h3>
-                                <p className='text-gray-800 mb-2'>{blog.content}</p>
-                                <p className='text-gray-600'>{blog.date}</p>
+                                <h3 className='text-[1rem] font-semibold mb-2'>{blog.title}</h3>
+                                <div className='flex justify-between text-[0.8rem] pt-4'>
+                                    <p className='text-gray-600'>{blog.author}</p>
+                                    <p className='text-gray-600'>{blog.date}</p>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -11,8 +11,8 @@ function Aboutus() {
                 </div>
                 <div className='w-[50%] text-smallText'>
                     <div className='flex flex-col items-center mt-[3rem] mb-[1rem]'>
-                        <div className='border border-homeBg rounded-2xl px-2 py-1 mb-3'>
-                            <p className='text-homeBg'>About Us</p>
+                        <div className='border border-homeBg rounded-2xl px-2 py-1 mb-3 hover:bg-homeBg'>
+                            <p className='text-homeBg hover:text-white'>About Us</p>
                         </div>
                         <p className='section-heading'>We Transform Your Business with Our Cutting-Edge Tools for Smarter Solutions.</p>
                     </div>

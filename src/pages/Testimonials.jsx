@@ -47,8 +47,8 @@ function Testimonials() {
     return (
         <div className='px-3 py-5 my-[3rem]'>
             <div className='flex justify-center items-center my-2'>
-                <div className='border border-homeBg rounded-2xl px-2 py-1 mb-3'>
-                    <p className='text-homeBg text-center'>Testimonials</p>
+                <div className='border border-homeBg rounded-2xl px-2 py-1 mb-3 hover:bg-homeBg'>
+                    <p className='text-homeBg text-center hover:text-white'>Testimonials</p>
                 </div>
             </div>
             <Slider {...settings}>
