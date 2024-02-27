@@ -1,6 +1,5 @@
 {
   "name": "tensor-solution-portfolio-website",
-  "homepage": "https://adarsh-206.github.io/Tensor-Website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
