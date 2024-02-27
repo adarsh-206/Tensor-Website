@@ -117,7 +117,7 @@ function Contactus() {
             </div>
             <div className='shadow-lg'>
                 <div className="w-full h-96">
-                    {/* <iframe
+                    <iframe
                         className="w-full h-full"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.95586305615!2d77.35667427442422!3d23.281053406634616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c67c6f6ede10b%3A0x4fc19107b0b82c24!2s63-B%2C%20Indra%20Vihar%20Colony%2C%20Tilak%20Nagar%2C%20Airport%20Road%2C%20Bhopal%2C%20Madhya%20Pradesh%20462030!5e0!3m2!1sen!2sin!4v1709026591320!5m2!1sen!2sin"
                         width="600"
@@ -126,7 +126,7 @@ function Contactus() {
                         loading="lazy"
                         title="Google Map"
                         referrerPolicy="no-referrer-when-downgrade"
-                    ></iframe> */}
+                    ></iframe>
                 </div>
             </div>
         </div>
