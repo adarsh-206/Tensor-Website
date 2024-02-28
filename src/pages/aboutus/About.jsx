@@ -8,6 +8,7 @@ import values4 from '../../assests/values-4.png'
 import whywe1 from '../../assests/whywe4.jpg'
 import whywe2 from '../../assests/whywe2.png'
 import whywe3 from '../../assests/whywe3.jpg'
+import Customers from '../homePage/Customers'
 
 function About() {
     return (
@@ -74,7 +75,7 @@ function About() {
             </div>
 
             <div className='mr-5 mt-[4rem]'>
-                <p className='font-bold text-xl mb-8 ml-[3rem] text-center'>Why we?</p>
+                <p className='font-bold text-xl mb-8 text-center'>Why we?</p>
                 <div className='flex justify-around items-center'>
                     <div className='w-[52%] text-sm'>
                         <p className='leading-relaxed'>Our expertise in ML and AI enables us to unlock valuable insights from data, automate processes, and create intelligent systems that revolutionize businesses across industries. We are specialized in delivering projects related to Large Language Models (LLMs) and RAG pipeline harnessing world knowledge to retrieve information for chatbots. We have also delivered projects powered under AI / ML capabilities such as Indic Language translation, transliteration, OCR, Image Search, Retail Product Catalog Search and much more.</p>
@@ -87,7 +88,10 @@ function About() {
                     </div>
                 </div>
             </div>
-
+            <div className='mt-[4rem]'>
+                <p className='font-bold text-xl mb-8 text-center'>Our Clients</p>
+                <Customers />
+            </div>
         </div>
     )
 }

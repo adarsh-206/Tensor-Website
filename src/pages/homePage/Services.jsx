@@ -4,6 +4,7 @@ import analytics from '../../assests/analytics.png'
 import automation from '../../assests/automation.png'
 import dataProcessing from '../../assests/data-processing.png'
 import cyberEye from '../../assests/cyber-eye.png'
+import Customers from './Customers'
 
 function Services() {
     return (
@@ -75,6 +76,7 @@ function Services() {
                     </div>
                 </div>
             </div>
+            <Customers />
         </div>
     )
 }
