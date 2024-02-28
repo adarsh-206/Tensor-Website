@@ -1,10 +1,10 @@
 import React from 'react'
-import ncert from '../assests/customers/ncert.png'
-import vigyanprasar from '../assests/customers/vigyan-prasar.jpeg'
-import investindia from '../assests/customers/invest-india.jpg'
-import startupindia from '../assests/customers/startup-india.png'
-import appyHub from '../assests/customers/appyhub.svg'
-import surgiSol from '../assests/customers/surgisol.jpg'
+import ncert from '../../assests/customers/ncert.png'
+import vigyanprasar from '../../assests/customers/vigyan-prasar.jpeg'
+import investindia from '../../assests/customers/invest-india.jpg'
+import startupindia from '../../assests/customers/startup-india.png'
+import appyHub from '../../assests/customers/appyhub.svg'
+import surgiSol from '../../assests/customers/surgisol.jpg'
 
 function Customers() {
     return (

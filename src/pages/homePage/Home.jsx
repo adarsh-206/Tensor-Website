@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeIcon from '../assests/home-icon2.png'
+import HomeIcon from '../../assests/home-icon2.png'
 import { TypeAnimation } from 'react-type-animation'
 
 function Home() {

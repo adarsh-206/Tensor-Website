@@ -12,7 +12,7 @@ function Blog() {
                     <p className='my-3'>Home / Pages / Blog</p>
                 </div>
                 <div className='p-3'>
-                    <img src={AboutBg} alt="icon" width="130" height="130" />
+                    <img src={AboutBg} alt="about" width="130" height="130" />
                 </div>
             </div>
             <div className='px-5 py-3 my-[2rem]'>
@@ -22,7 +22,7 @@ function Blog() {
                 <div className='cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 m-5'>
                     {blogData.map((blog, index) => (
                         <div key={index} className="relative bg-gray-300 rounded-lg overflow-hidden shadow-lg h-[70vh] flex flex-col justify-end">
-                            <img className="absolute inset-0 w-full h-full object-cover" src={blog.image} alt="Background Image" style={{ transition: 'transform 0.3s', ':hover': { transform: 'scale(1.1)' } }} />
+                            <img className="absolute inset-0 w-full h-full object-cover" src={blog.image} alt="Background" style={{ transition: 'transform 0.3s', ':hover': { transform: 'scale(1.1)' } }} />
                             <div className="absolute inset-0" style={{ background: 'linear-gradient(rgba(20, 24, 62, 0), #0e112b)' }}></div>
                             <div className="relative z-10 p-4">
                                 <div className="inline-block bg-black px-2 py-1 rounded-xl">

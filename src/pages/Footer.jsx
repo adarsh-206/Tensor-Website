@@ -56,8 +56,9 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center items-center mt-[3rem]'>
-                <p className='text-[0.8rem]'>© 2022 AppyHub Technology Solutions Pvt Ltd. All Rights Reserved. Privacy policy</p>
+            <div className='flex justify-center items-center mt-[3rem] space-x-2'>
+                <p className='text-[0.8rem]'>© 2024 Tensor Solutions Tech Pvt Ltd.</p>
+                <p className='text-[0.8rem]'>All Rights Reserved. Privacy policy</p>
             </div>
         </footer>
     )

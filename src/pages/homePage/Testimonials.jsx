@@ -1,5 +1,5 @@
 import React from 'react';
-import quote from '../assests/quote.png';
+import quote from '../../assests/quote.png';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -51,6 +51,7 @@ function Testimonials() {
                     <p className='text-homeBg text-center hover:text-white'>Testimonials</p>
                 </div>
             </div>
+            <p className='text-lg text-center font-[500] py-1 mb-6'>Discover why our clients love us – testimonials that speak volumes.</p>
             <Slider {...settings}>
                 {testimonials.map(testimonial => (
                     <div key={testimonial.id} className='w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2'>

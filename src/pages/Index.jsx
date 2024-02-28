@@ -1,16 +1,16 @@
 import React from 'react'
-import Home from './Home'
-import Aboutus from './Aboutus'
-import Capability from './Capability'
-import OurTeam from './OurTeam'
-import Testimonials from './Testimonials'
-import Blog from './Blogs'
+import Home from './homePage/Home'
+import Services from './homePage/Services'
+import Capability from './homePage/Capability'
+import OurTeam from './homePage/OurTeam'
+import Testimonials from './homePage/Testimonials'
+import Blog from './homePage/Blogs'
 
 function index() {
     return (
         <>
             <Home />
-            <Aboutus />
+            <Services />
             <Capability />
             <OurTeam />
             <Blog />

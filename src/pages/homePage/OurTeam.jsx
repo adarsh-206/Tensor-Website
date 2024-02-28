@@ -15,6 +15,7 @@ function OurTeam() {
                     <p className='text-homeBg text-center hover:text-white'>Our Team</p>
                 </div>
             </div>
+            <p className='text-lg text-center font-[500] py-1 mb-8'>Meet our dedicated team of professionals, committed to delivering excellence in every endeavor.</p>
             <div className='flex flex-wrap'>
                 {teamMembers.map(member => (
                     <div key={member.id} className='w-full sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 p-2'>
