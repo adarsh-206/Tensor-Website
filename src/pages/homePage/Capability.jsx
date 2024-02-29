@@ -45,7 +45,7 @@ function Card({ videoId, title, description }) {
 
 function Capability() {
     return (
-        <div className='bg-bgLight py-3 mt-[2rem]'>
+        <div className='bg-bgLight py-3 mt-[2rem] shadow-md' style={{ boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 -4px 6px -1px rgba(0, 0, 0, 0.1)" }}>
             <div className='flex flex-col items-center mt-[1rem] mb-[2rem]'>
                 <div className='border border-homeBg rounded-2xl px-2 py-1 mb-3 hover:bg-homeBg'>
                     <p className='text-homeBg hover:text-white'>Our Capabilities</p>

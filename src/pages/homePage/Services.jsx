@@ -17,7 +17,7 @@ function Services() {
             </div>
             <div className='flex justify-center items-center space-x-8 m-[3rem]'>
                 <div className="flex flex-col flex-1">
-                    <div className="flex flex-col mb-5">
+                    <div className="flex flex-col mb-5 bg-bgLight p-3 rounded-lg shadow-md">
                         <div className='flex space-x-5'>
                             <div>
                                 <img src={analytics} alt='analytics' height="180" width="180" />
@@ -31,14 +31,14 @@ function Services() {
                         </div>
                     </div>
                     <div className="flex flex-col">
-                        <div className='flex space-x-5'>
+                        <div className='flex space-x-5 bg-bgLight p-3 rounded-lg shadow-md'>
                             <div>
                                 <img src={automation} alt='analytics' height="180" width="180" />
                             </div>
                             <div>
                                 <p className='font-semibold text-lg mb-1'>Intelligent Automation</p>
                                 <p className='text-gray-700 text-[0.9rem]'>
-                                    Streamline processes, increase efficiency, and reduce operational costs by implementing intelligent automation solutions that leverage artificial intelligence and machine learning technologies.
+                                    Streamline processes, increase efficiency, and reduce operational costs by implementing intelligent automation solutions that leverage AI & ML technologies.
                                 </p>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ function Services() {
                 </div>
                 <div className="flex flex-col flex-1">
                     <div className="flex flex-col mb-5">
-                        <div className='flex space-x-5'>
+                        <div className='flex space-x-5 bg-bgLight p-3 rounded-lg shadow-md'>
                             <div>
                                 <img src={dataProcessing} alt='analytics' height="180" width="180" />
                             </div>
@@ -62,14 +62,14 @@ function Services() {
                         </div>
                     </div>
                     <div className="flex flex-col">
-                        <div className='flex space-x-5'>
+                        <div className='flex space-x-5 bg-bgLight p-3 rounded-lg shadow-md'>
                             <div>
                                 <img src={cyberEye} alt='analytics' height="180" width="180" />
                             </div>
                             <div>
                                 <p className='font-semibold text-lg mb-1'>Computer Vision Technology</p>
                                 <p className='text-gray-700 text-[0.9rem]'>
-                                    Computer Vision Technology: Revolutionize industries, improve safety, and optimize workflows with our computer vision technology, enabling machines to interpret and understand visual information like never before.
+                                    Revolutionize industries, improve safety, and optimize workflows with our computer vision technology, enabling machines to interpret and understand visual information like never before.
                                 </p>
                             </div>
                         </div>

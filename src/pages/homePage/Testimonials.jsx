@@ -55,7 +55,7 @@ function Testimonials() {
             <Slider {...settings}>
                 {testimonials.map(testimonial => (
                     <div key={testimonial.id} className='w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-2'>
-                        <div className='rounded-lg overflow-hidden bg-bgLight '>
+                        <div className='rounded-lg overflow-hidden bg-bgLight shadow-md'>
                             <div className='p-4'>
                                 <div className='mb-4'>
                                     <p className='text-gray-800'><img src={quote} className='text-gray-400 text-2xl mr-2' alt="quote" />{testimonial.text}</p>

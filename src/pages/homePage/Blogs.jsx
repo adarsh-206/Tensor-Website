@@ -5,7 +5,7 @@ function Blog() {
     const blogs = blogData.slice(0, 3);
 
     return (
-        <div className='px-3 py-5 bg-bgLight mt-[2rem]'>
+        <div className='px-3 py-5 bg-bgLight mt-[2rem]' style={{ boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 -4px 6px -1px rgba(0, 0, 0, 0.1)" }}>
             <div className='flex justify-center items-center my-2'>
                 <div className='border border-homeBg rounded-2xl px-2 py-1 mb-3 hover:bg-homeBg'>
                     <p className='text-homeBg text-center hover:text-white'>Recent Blogs</p>

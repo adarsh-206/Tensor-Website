@@ -13,7 +13,7 @@ module.exports = {
         homeBg: '#32639d',
         navText: 'rgba(255, 255, 255, .7)',
         smallText: '#555',
-        bgLight: '#F2F3F4'
+        bgLight: '#e9f0f8'                 // #F2F3F4
       }
     },
   },

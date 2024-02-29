@@ -26,7 +26,7 @@ function Navbar() {
             <div className='text-white font-sans font-bold logo'>
                 <Link to="/">Tensor</Link>
             </div>
-            <div className='flex space-x-4 text-navText'>
+            <div className='flex space-x-4 text-navText font-[500]'>
                 <Link to="/" className={`hover:text-white ${location.pathname === '/' ? 'text-white' : ''}`}>Home</Link>
                 <Link to="/about" className={`hover:text-white ${location.pathname === '/about' ? 'text-white' : ''}`}>About us</Link>
                 <Link to="/products" className={`hover:text-white ${location.pathname === '/products' ? 'text-white' : ''}`}>Products</Link>
