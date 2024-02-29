@@ -16,7 +16,7 @@ function EachBlog() {
         <div className='mt-[3rem] w-[70%] mx-auto'>
             <div className='relative'>
                 <img className='rounded-lg h-64 w-full' src={image} alt='blog post' />
-                <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white">
+                <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white rounded-lg">
                     {/* <p className="text-3xl text-center font-bold">{title}</p>
                     <div className='flex justify-center space-x-8 text-sm py-4'>
                         <p>{author}</p>
