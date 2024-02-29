@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation'
 
 function Home() {
     return (
-        <div className='flex justify-center items-center p-2 bg-homeBg bg-home-png gap-5'>
+        <div className='flex justify-center items-center p-2 bg-homeBg bg-home-png gap-5 shadow-lg'>
             <div className='text-white w-[50%] font-bold home-text'>
                 <TypeAnimation
                     sequence={[

@@ -1,13 +1,11 @@
 import React from 'react'
 import AboutBg from '../../assests/about.png'
-import AboutPara1 from '../../assests/aboutpara1.jpg'
+import AboutPara1 from '../../assests/aboutpara1.webp'
 import values1 from '../../assests/values-1.png'
 import values2 from '../../assests/values-2.png'
 import values3 from '../../assests/values-3.png'
 import values4 from '../../assests/values-4.png'
-import whywe1 from '../../assests/whywe4.jpg'
-import whywe2 from '../../assests/whywe2.png'
-import whywe3 from '../../assests/whywe3.jpg'
+import whywe1 from '../../assests/whywe4.webp'
 import Customers from '../homePage/Customers'
 
 function About() {

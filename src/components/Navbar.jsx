@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { MdOutlineArrowDropDown } from "react-icons/md";
 
 function Navbar() {
     const [scrolling, setScrolling] = useState(false);
     const [showDropdown, setShowDropdown] = useState(false);
     const location = useLocation();
+    const dropdownRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -15,19 +17,23 @@ function Navbar() {
             }
         };
 
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setShowDropdown(false);
+            }
+        };
+
         window.addEventListener('scroll', handleScroll);
+        document.addEventListener('mousedown', handleClickOutside);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            document.removeEventListener('mousedown', handleClickOutside);
         };
     }, []);
 
-    const handleDropdownEnter = () => {
-        setShowDropdown(true);
-    };
-
-    const handleDropdownLeave = () => {
-        setShowDropdown(false);
+    const toggleDropdown = () => {
+        setShowDropdown(!showDropdown);
     };
 
     return (
@@ -38,20 +44,17 @@ function Navbar() {
             <div className='flex space-x-4 text-navText font-[500] relative'>
                 <Link to="/" className={`hover:text-white ${location.pathname === '/' ? 'text-white' : ''}`}>Home</Link>
                 <Link to="/about" className={`hover:text-white ${location.pathname === '/about' ? 'text-white' : ''}`}>About us</Link>
-                <div
-                    className="relative"
-                    onMouseEnter={handleDropdownEnter}
-                    onMouseLeave={handleDropdownLeave}
-                >
-                    <button
-                        className={`hover:text-white focus:outline-none ${location.pathname.startsWith('/products') ? 'text-white' : ''}`}
-                    >
-                        Products
+                <div className="relative" ref={dropdownRef}>
+                    <button onClick={toggleDropdown} className={`hover:text-white focus:outline-none ${location.pathname.startsWith('/products') ? 'text-white' : ''}`}>
+                        <div className='flex justify-center items-center'>
+                            <p>Products</p>
+                            <MdOutlineArrowDropDown />
+                        </div>
                     </button>
                     {showDropdown && (
                         <div className="absolute top-full mt-2 bg-white shadow-lg rounded">
-                            <Link to="/products/category1" className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200">Bhashantar</Link>
-                            <Link to="/products/category2" className="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200">Bhashantar</Link>
+                            <Link to="/products/bhashantar" className="block px-4 py-2 text-sm text-gray-800 hover:bg-bgLight rounded">Bhashantar</Link>
+                            <Link to="/products/bhashantar" className="block px-4 py-2 text-sm text-gray-800 hover:bg-bgLight rounded">Bhashantar</Link>
                         </div>
                     )}
                 </div>

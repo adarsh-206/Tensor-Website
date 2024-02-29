@@ -7,7 +7,7 @@ import About from './pages/aboutus/About';
 import Contactus from './pages/contactus/Contactus';
 import Footer from './pages/Footer';
 import EachBlog from './pages/Blogs/EachBlog';
-import Products from './pages/products/Products';
+import Bhashantar from './pages/products/Bhashantar';
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Route path="/blogs" element={<Blog />} />
           <Route path="/contact" element={<Contactus />} />
           <Route path="/blogs/:id" element={<EachBlog />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/products/bhashantar" element={<Bhashantar />} />
         </Routes>
         <Footer />
       </Router>
