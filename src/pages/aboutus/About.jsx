@@ -51,22 +51,22 @@ function About() {
             <div className='mr-5 mt-[4rem]'>
                 <p className='font-bold text-xl mb-8 ml-[3rem] text-center'>Our Values</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 ml-[3rem]">
-                    <div className="bg-[#F2F2F2] rounded-lg p-4 flex flex-col justify-center items-center shadow-lg">
+                    <div className="bg-bgLight rounded-lg p-4 flex flex-col justify-center items-center shadow-lg">
                         <img className='my-5' src={values1} alt="value1" width="80" height="80" />
                         <p className="font-bold text-lg mb-2">Expertise in Innovation</p>
                         <p className="text-sm text-center">We leverage ML and AI to empower businesses with valuable insights and innovative solutions, driving transformation.</p>
                     </div>
-                    <div className="bg-[#F2F2F2] rounded-lg p-4 flex flex-col justify-center items-center shadow-lg">
+                    <div className="bg-bgLight rounded-lg p-4 flex flex-col justify-center items-center shadow-lg">
                         <img className='my-5' src={values2} alt="value2" width="90" height="90" />
                         <p className="font-bold text-lg mb-2">Commitment to Excellence</p>
                         <p className="text-sm text-center">Dedicated to excellence, we collaborate closely with clients to surpass expectations, delivering results that exceed industry standards.</p>
                     </div>
-                    <div className="bg-[#F2F2F2] rounded-lg p-4 flex flex-col justify-center items-center shadow-lg">
+                    <div className="bg-bgLight rounded-lg p-4 flex flex-col justify-center items-center shadow-lg">
                         <img className='my-5' src={values3} alt="value3" width="90" height="90" />
                         <p className="font-bold text-lg mb-2">Creative Digital Solutions</p>
                         <p className="text-sm text-center">We blend creativity, functionality, and UX in tech-driven web and app development, bringing ideas to life with tangible results.</p>
                     </div>
-                    <div className="bg-[#F2F2F2] rounded-lg p-4 flex flex-col justify-center items-center shadow-lg">
+                    <div className="bg-bgLight rounded-lg p-4 flex flex-col justify-center items-center shadow-lg">
                         <img className='my-5' src={values4} alt="value4" width="90" height="90" />
                         <p className="font-bold text-lg mb-2">Immersive Experiences</p>
                         <p className="text-sm">Using AR and VR, we create immersive experiences for product showcasing, training, and entertainment, unlocking endless innovation.</p>

@@ -40,18 +40,18 @@ function Contactus() {
             </div>
             <div className="container mx-auto py-8">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-                    <div className="bg-[#F2F2F2] p-4 rounded-md shadow-md">
+                    <div className="bg-bgLight p-4 rounded-md shadow-md">
                         <p className='p-2 mb-4'><CiLocationOn size={40} color='blue' /></p>
                         <h2 className="text-lg font-bold mb-2">Address</h2>
                         <p>63-B, Indra Vihar Colony,</p>
                         <p>Airport Road, Bhopal, M.P. 462030</p>
                     </div>
-                    <div className="bg-[#F2F2F2] p-4 rounded-md shadow-md">
+                    <div className="bg-bgLight p-4 rounded-md shadow-md">
                         <p className='p-2 mb-4'><TfiEmail size={38} color='blue' /></p>
                         <h2 className="text-lg font-bold mb-2">Write Us</h2>
                         <p>tensor.solutiontech@gmail.com</p>
                     </div>
-                    <div className="bg-[#F2F2F2] p-4 rounded-md shadow-md">
+                    <div className="bg-bgLight p-4 rounded-md shadow-md">
                         <p className='p-2 mb-4'><IoCallOutline size={40} color='blue' /></p>
                         <h2 className="text-lg font-bold mb-2">Call Us</h2>
                         <p>+91-9560187169</p>
@@ -72,7 +72,7 @@ function Contactus() {
                                 name="name"
                                 value={formData.name}
                                 onChange={handleChange}
-                                className="w-full border-gray-300 bg-[#F2F2F2] rounded-md p-2 focus:outline-none"
+                                className="w-full border-gray-300 bg-bgLight rounded-md p-2 focus:outline-none"
                                 placeholder="Full Name"
                                 required
                             />
@@ -84,7 +84,7 @@ function Contactus() {
                                 name="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className="w-full border-gray-300 bg-[#F2F2F2] focus:outline-none rounded-md p-2"
+                                className="w-full border-gray-300 bg-bgLight focus:outline-none rounded-md p-2"
                                 placeholder="Email Address"
                                 required
                             />
@@ -95,7 +95,7 @@ function Contactus() {
                                 name="message"
                                 value={formData.message}
                                 onChange={handleChange}
-                                className="w-full border-gray-300 bg-[#F2F2F2] rounded-md p-2 focus:outline-none"
+                                className="w-full border-gray-300 bg-bgLight rounded-md p-2 focus:outline-none"
                                 rows="4"
                                 placeholder="Message"
                                 required
