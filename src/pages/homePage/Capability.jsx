@@ -3,21 +3,21 @@ import React, { useState, useEffect, useRef } from 'react';
 const cardsData = [
     {
         id: 1,
-        videoId: 'aZ5EsdnpLMI?si=y1A2K8LVNNjWcGif',
-        title: 'Title 1',
-        description: 'Description for Card 1',
+        videoId: 'oV74Najm6Nc?si=P1F1-fnlo0MCNdW',
+        title: 'Unveiling the Power of Artificial Intelligence',
+        description: 'Explore the transformative impact of artificial intelligence (AI) as we delve into its applications, capabilities, and potential to shape the future.',
     },
     {
         id: 2,
-        videoId: 'aZ5EsdnpLMI?si=y1A2K8LVNNjWcGif',
-        title: 'Title 2',
-        description: 'Description for Card 2',
+        videoId: '-DEL6SVRPw0?si=K8-yJRBgvqlkrc6x',
+        title: "Demystifying Machine Learning: A Beginner's Guide",
+        description: "Whether you're a student, a curious individual, or a professional looking to delve into the world of AI, this video provides a solid foundation to kickstart your journey into machine learning.",
     },
     {
         id: 3,
-        videoId: 'aZ5EsdnpLMI?si=y1A2K8LVNNjWcGif',
-        title: 'Title 3',
-        description: 'Description for Card 3',
+        videoId: 'vkRuh7cEaxw?si=CHXl6jJ_zxs1wnku',
+        title: 'Unleashing Web Development Power',
+        description: 'From fluid layouts to media queries, discover key techniques to ensure your websites look great and function seamlessly across various devices and screen sizes.',
     },
 ];
 
@@ -37,7 +37,7 @@ function Card({ videoId, title, description }) {
             </div>
             <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">{title}</div>
-                <p className="text-gray-700 text-base">{description}</p>
+                <p className="text-gray-500 text-base text-sm">{description}</p>
             </div>
         </div>
     );
