@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutBg from '../../assests/about.png'
+import team from '../../assests/team.png'
 import AboutPara1 from '../../assests/aboutpara1.webp'
 import values1 from '../../assests/values-1.png'
 import values2 from '../../assests/values-2.png'
@@ -16,8 +16,9 @@ function About() {
                     <p className='text-white font-bold about-text'>About Us</p>
                     <p className='my-3'>Home / Pages / About Us</p>
                 </div>
-                <div className='p-3'>
-                    <img src={AboutBg} alt="icon" width="130" height="130" />
+                <div className='relative p-3'>
+                    <img src={team} alt="icon" width="130" height="130" />
+                    <div className="absolute inset-0 bg-homeBg opacity-20 rounded-lg"></div>
                 </div>
             </div>
 

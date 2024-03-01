@@ -11,8 +11,9 @@ function Blog() {
                     <p className='text-white font-bold about-text'>Blogs</p>
                     <p className='my-3'>Home / Pages / Blog</p>
                 </div>
-                <div className='p-3'>
+                <div className='relative p-3 my-2'>
                     <img src={AboutBg} alt="about" width="130" height="130" />
+                    <div className="absolute inset-0 bg-homeBg opacity-20 rounded-lg"></div>
                 </div>
             </div>
             <div className='px-5 py-3 my-[2rem]'>

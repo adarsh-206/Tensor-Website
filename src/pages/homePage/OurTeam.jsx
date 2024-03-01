@@ -10,13 +10,13 @@ function OurTeam() {
     ];
 
     return (
-        <div className='px-3 py-5 mt-[2rem]'>
+        <div className='px-3 py-5 my-[3rem]'>
             <div className='flex justify-center items-center my-2'>
-                <div className='border border-homeBg rounded-2xl px-2 py-1 mb-3 hover:bg-homeBg'>
+                <div className='border border-homeBg rounded-2xl px-2 py-1 mb-5 hover:bg-homeBg'>
                     <p className='text-homeBg text-center hover:text-white'>Our Team</p>
                 </div>
             </div>
-            <p className='text-lg text-center font-[500] py-1 mb-8'>Meet our dedicated team of professionals, committed to delivering excellence in every endeavor.</p>
+            <p className='text-lg text-center font-[500] py-1 mb-10'>Meet our dedicated team of professionals, committed to delivering excellence in every endeavor.</p>
             <div className='flex flex-wrap'>
                 {teamMembers.map(member => (
                     <div key={member.id} className='w-full sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/4 p-2'>
@@ -25,14 +25,12 @@ function OurTeam() {
                                 <div className='border-[5px] border-homeBg rounded-full p-2'>
                                     <div className='rounded-full overflow-hidden relative' style={{ width: '150px', height: '150px' }}>
                                         <img src={member.image} alt={member.name} className='w-full h-full object-cover' />
-                                        <div className="absolute inset-0 flex items-center justify-center bg-homeBg opacity-0 hover:opacity-100 transition-opacity duration-300">
-                                            <div className="flex items-center justify-center">
-                                                <a href="#" className="text-white hover:text-gray-400 transition-colors duration-300">
-                                                    <div className='bg-white rounded-full p-3'>
-                                                        <FaLinkedinIn size={16} color='blue' />
-                                                    </div>
-                                                </a>
-                                            </div>
+                                        <div className="flex items-center justify-center">
+                                            <a href="#" className="text-white hover:text-gray-400 transition-colors duration-300">
+                                                <div className='bg-white rounded-full p-3'>
+                                                    <FaLinkedinIn size={16} color='blue' />
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         'sans': ['Anta', 'sans-serif'],
         'ubuntu': ['Ubuntu', 'sans-serif'],
+        'tanos': ['Tinos', 'sans-serif']
       },
       colors: {
         homeBg: '#32639d',

@@ -31,11 +31,12 @@ function Contactus() {
         <div>
             <div className='flex justify-around items-center p-2 bg-homeBg bg-home-png'>
                 <div className='text-white'>
-                    <p className='text-white font-bold about-text'>Blogs</p>
-                    <p className='my-3'>Home / Pages / Blog</p>
+                    <p className='text-white font-bold about-text'>Contact Us</p>
+                    <p className='my-3'>Home / Pages / Contact</p>
                 </div>
-                <div className='p-3'>
+                <div className='relative p-3'>
                     <img src={AboutBg} alt="icon" width="130" height="130" />
+                    <div className="absolute inset-0 bg-homeBg opacity-20 rounded-lg"></div>
                 </div>
             </div>
             <div className="container mx-auto py-8">

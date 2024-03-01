@@ -3,11 +3,11 @@
 const blogData = [
     {
         id: 1,
-        category: "Machine Learning",
+        category: "Natural Language Processing (NLP)",
         title: "Exploring RAG Pipeline and Information Retrieval with LLMs",
         content: `
             <h2 class="mb-4 font-bold">Introduction:</h2>
-            <p class="mb-4">In today's digital age, information overload is a common challenge. Whether you're a student conducting research, a professional seeking relevant data, or simply looking for answers to your questions, efficient information retrieval is key. One emerging technology that's revolutionizing this process is the RAG (Retrieve, Aggregate, Generate) pipeline combined with Large Language Models (LLMs). In this blog, we'll delve into the workings of the RAG pipeline and explore how LLMs enhance information retrieval capabilities.</p>
+            <p class="mb-4 leading-relaxed">In today's digital age, information overload is a common challenge. Whether you're a student conducting research, a professional seeking relevant data, or simply looking for answers to your questions, efficient information retrieval is key. One emerging technology that's revolutionizing this process is the RAG (Retrieve, Aggregate, Generate) pipeline combined with Large Language Models (LLMs). In this blog, we'll delve into the workings of the RAG pipeline and explore how LLMs enhance information retrieval capabilities.</p>
             
             <h3 class="mb-4 font-bold">Understanding the RAG Pipeline:</h3>
             <p class="mb-4">The RAG pipeline is a novel approach to information retrieval that consists of three main stages: Retrieve, Aggregate, and Generate.</p>
@@ -29,13 +29,13 @@ const blogData = [
             <h3 class="mb-4 font-bold">Conclusion:</h3>
             <p>The combination of the RAG pipeline and Large Language Models represents a powerful paradigm for information retrieval in the digital age. By leveraging advanced techniques in natural language processing, contextual understanding, and continuous learning, this approach enables more efficient and effective access to information. Whether you're searching for answers, conducting research, or exploring new topics, the RAG pipeline with LLMs offers a versatile and reliable solution for fulfilling your information needs.</p>
         `,
-        author: "Mr. John Walk",
-        date: "3rd Dec 2023",
+        author: "Aarav Patel",
+        date: "3rd December 2023",
         image: "https://developer-blogs.nvidia.com/wp-content/uploads/2023/12/rag-101-featured-1.png",
     },
     {
         id: 2,
-        category: "Machine Learning",
+        category: "Large Language Models (LLMs)",
         title: "Unleashing the Power of Large Language Models: Real-World Applications Across Industries",
         content: `
         <p class="font-bold">Introduction</p>
@@ -67,13 +67,13 @@ const blogData = [
         The rise of Large Language Models has ushered in a new era of innovation and transformation across industries. From ecommerce to finance, sports, fashion, retail, and entertainment, LLMs are revolutionizing the way businesses operate, interact with customers, and deliver value. By harnessing the power of natural language processing and machine learning, organizations can unlock new opportunities, drive efficiency, and stay ahead of the competition in today's rapidly evolving digital landscape. Whether you're a retailer looking to optimize inventory management, a financial institution seeking to analyze market sentiment, or an entertainment company aiming to engage audiences, LLMs offer endless possibilities for innovation and growth.
         </p>
         `,
-        author: "Mr. John Walk",
-        date: "3rd Dec 2023",
+        author: "Nisha Sharma",
+        date: "26th September 2023",
         image: "https://miro.medium.com/v2/resize:fit:1183/1*9h_P1gUtSMt5MOJLxs3rUQ.jpeg",
     },
     {
         id: 3,
-        category: "Machine Learning",
+        category: "Large Language Models (LLMs)",
         title: "Demystifying Large Language Model Fine-Tuning: A Comprehensive Guide",
         content: `
         <p class="font-bold">Introduction</p>
@@ -121,8 +121,8 @@ const blogData = [
         LLM fine-tuning is a powerful technique that allows organizations to leverage pre-trained language models for a wide range of NLP tasks and domains. By fine-tuning LLMs on task-specific datasets, organizations can achieve state-of-the-art performance and adaptability across various applications. As LLMs continue to advance and become more accessible, fine-tuning will play an increasingly important role in unlocking the full potential of natural language understanding and generation.
         </p>
         `,
-        author: "Mr. John Walk",
-        date: "3rd Dec 2023",
+        author: "Rohan Gupta",
+        date: "12th Feb 2024",
         image: "https://miro.medium.com/v2/resize:fit:1024/0*fklJ7na5YNh3dWh1.png",
     },
 ];

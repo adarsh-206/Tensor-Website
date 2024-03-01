@@ -5,6 +5,7 @@ import Capability from './homePage/Capability'
 import OurTeam from './homePage/OurTeam'
 import Testimonials from './homePage/Testimonials'
 import Blog from './homePage/Blogs'
+import TestimonialsData from './homePage/TestimonialsData'
 
 function index() {
     return (
@@ -14,7 +15,7 @@ function index() {
             <Capability />
             <OurTeam />
             <Blog />
-            <Testimonials />
+            <Testimonials reviews={TestimonialsData} />
         </>
     )
 }

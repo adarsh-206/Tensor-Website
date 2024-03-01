@@ -1,5 +1,5 @@
 import React from 'react'
-import productsimg from '../../assests/products.png'
+import translate from '../../assests/translate.png'
 import bhashantar from '../../assests/bhashantar.png'
 
 function Bhashantar() {
@@ -10,8 +10,9 @@ function Bhashantar() {
                     <p className='text-white font-bold about-text'>Bhashantar</p>
                     <p className='my-3'>Home / Pages / Bhasantar</p>
                 </div>
-                <div className='p-3'>
-                    <img src={productsimg} alt="icon" width="220" height="250" />
+                <div className='relative p-3 my-2'>
+                    <img src={translate} alt="icon" width="100" height="100" />
+                    <div className="absolute inset-0 bg-homeBg opacity-20 rounded-lg"></div>
                 </div>
             </div>
             <div className='flex justify-center my-8'>

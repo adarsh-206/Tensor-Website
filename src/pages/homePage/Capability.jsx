@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const cardsData = [
     {
@@ -44,6 +44,33 @@ function Card({ videoId, title, description }) {
 }
 
 function Capability() {
+
+    const [isVisible, setIsVisible] = useState(false);
+    const componentRef = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        observer.observe(componentRef.current);
+
+        return () => {
+            if (componentRef.current) {
+                observer.unobserve(componentRef.current);
+            }
+        };
+    }, []);
+
+    useEffect(() => {
+        setIsVisible(false);
+    }, [componentRef]);
+
     return (
         <div className='bg-bgLight py-3 mt-[2rem] shadow-md' style={{ boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 -4px 6px -1px rgba(0, 0, 0, 0.1)" }}>
             <div className='flex flex-col items-center mt-[1rem] mb-[2rem]'>
@@ -53,7 +80,7 @@ function Capability() {
                 <p className='text-lg font-[500] py-1 mb-4'>Unlocking limitless possibilities through cutting-edge artificial intelligence solutions</p>
                 <div className="flex flex-wrap justify-center">
                     {cardsData.map(card => (
-                        <div key={card.id} className="m-4">
+                        <div ref={componentRef} key={card.id} className={`m-4 ${isVisible ? 'slide-in-left' : ''}`}>
                             <Card {...card} />
                         </div>
                     ))}

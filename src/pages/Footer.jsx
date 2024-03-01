@@ -34,20 +34,19 @@ function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-2">What we do</h3>
                         <ul className="text-sm">
-                            <li>Home</li>
+                            <li><Link to="/">Home</Link></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold mb-2">Who we are</h3>
                         <ul className="text-sm">
-                            <li className='mb-2'>About Us</li>
-                            <li>Our Team</li>
+                            <li className='mb-2'><Link to="/about">About Us</Link></li>
                         </ul>
                     </div>
                     <div>
-                        <h3 className="text-lg font-semibold mb-2">Our works</h3>
+                        <h3 className="text-lg font-semibold mb-2">Products</h3>
                         <ul className="text-sm">
-                            <li><Link to="/products">Products</Link></li>
+                            <li><Link to="/products/bhashantar">Bhashantar</Link></li>
                         </ul>
                     </div>
                     <div>

@@ -54,7 +54,6 @@ function Navbar() {
                     {showDropdown && (
                         <div className="absolute top-full mt-2 bg-white shadow-lg rounded">
                             <Link to="/products/bhashantar" className="block px-4 py-2 text-sm text-gray-800 hover:bg-bgLight rounded">Bhashantar</Link>
-                            <Link to="/products/bhashantar" className="block px-4 py-2 text-sm text-gray-800 hover:bg-bgLight rounded">Bhashantar</Link>
                         </div>
                     )}
                 </div>
