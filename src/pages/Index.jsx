@@ -13,7 +13,7 @@ function index() {
             <Home />
             <Services />
             <Capability />
-            <OurTeam />
+            {/* <OurTeam /> */}
             <Blog />
             <Testimonials reviews={TestimonialsData} />
         </>
