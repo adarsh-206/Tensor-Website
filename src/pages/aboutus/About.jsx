@@ -1,11 +1,11 @@
 import React from 'react'
 import team from '../../assests/team.png'
-import AboutPara1 from '../../assests/aboutpara1.webp'
+import AboutPara1 from '../../assests/aboutpara1.jpg'
 import values1 from '../../assests/values-1.png'
 import values2 from '../../assests/values-2.png'
 import values3 from '../../assests/values-3.png'
 import values4 from '../../assests/values-4.png'
-import whywe1 from '../../assests/whywe4.webp'
+import whywe1 from '../../assests/whywe4.jpg'
 import Customers from '../homePage/Customers'
 
 function About() {
@@ -42,7 +42,7 @@ function About() {
                     </p>
                 </div>
                 <div className='relative'>
-                    <img className='rounded-lg' src={AboutPara1} alt='about para 1' height="420" width="470" />
+                    <img className='rounded-lg' src={AboutPara1} alt='About Us' height="420" width="470" />
                     <div className="absolute inset-0 bg-homeBg opacity-20 rounded-lg"></div>
                 </div>
             </div>
@@ -82,7 +82,7 @@ function About() {
                         <p className='leading-relaxed'>At Tensor, we are committed to excellence in every project we undertake. We work closely with our clients to understand their goals, challenges, and vision, and we strive to exceed their expectations at every turn. From concept to execution, we are your trusted partner in technology innovation.</p>
                     </div>
                     <div className='w-[39%] relative'>
-                        <img className='rounded-lg' src={whywe1} alt='why we 1' />
+                        <img className='rounded-lg' src={whywe1} alt='why we' />
                         <div className="absolute inset-0 bg-homeBg opacity-20 rounded-lg"></div>
                     </div>
                 </div>

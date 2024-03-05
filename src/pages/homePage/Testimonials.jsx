@@ -1,7 +1,5 @@
 import React from 'react'
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { useState } from 'react';
-import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 import quote from '../../assests/quote.png'
 
 const Card = (props) => {
