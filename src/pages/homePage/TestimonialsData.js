@@ -29,7 +29,7 @@ const TestimonialsData = [
     },
     {
         id: 5,
-        name: "Verusean",
+        name: "Varun Awasthi",
         job: "Data Analyst",
         image: "https://img.freepik.com/premium-vector/cute-boy-avatar-illustration_637684-31.jpg",
         text: "I had the opportunity to work with this team on a data analysis project, and I was impressed with their attention to detail and their ability to work with complex datasets. They provided valuable insights that helped us make informed business decisions. It was a pleasure working with them.",
