@@ -56,7 +56,7 @@ function Footer() {
                 </div>
             </div>
             <div className='flex justify-center items-center mt-[3rem] space-x-2'>
-                <p className='text-[0.8rem]'>© 2024 Tensor Solutions Tech Pvt Ltd.</p>
+                <p className='text-[0.8rem]'>© 2024 Tensor Solution Tech Pvt Ltd.</p>
                 <p className='text-[0.8rem]'>All Rights Reserved. Privacy policy</p>
             </div>
         </footer>
