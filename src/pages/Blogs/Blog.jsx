@@ -25,7 +25,7 @@ function Blog() {
                         <div key={index} className="relative bg-gray-300 rounded-lg overflow-hidden shadow-lg h-[70vh] flex flex-col justify-end">
                             <img className="absolute inset-0 w-full h-full object-cover" src={blog.image} alt="Background" style={{ transition: 'transform 0.3s', ':hover': { transform: 'scale(1.1)' } }} />
                             <div className="absolute inset-0" style={{ background: 'linear-gradient(rgba(20, 24, 62, 0), #0e112b)' }}></div>
-                            <div className="relative z-10 p-4">
+                            <div className="relative p-4">
                                 <div className="inline-block bg-black px-2 py-1 rounded-xl">
                                     <h2 className="text-[0.7rem] text-white">{blog.category}</h2>
                                 </div>

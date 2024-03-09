@@ -5,35 +5,43 @@ import { MdOutlineArrowDropDown } from "react-icons/md";
 function Navbar() {
     const [scrolling, setScrolling] = useState(false);
     const [showDropdown, setShowDropdown] = useState(false);
+    const [showNestedDropdown, setShowNestedDropdown] = useState(false);
+    const [nestedDropdownContent, setNestedDropdownContent] = useState([]);
     const location = useLocation();
     const dropdownRef = useRef(null);
+    const nestedDropdownRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 90) {
-                setScrolling(true);
-            } else {
-                setScrolling(false);
-            }
-        };
-
-        const handleClickOutside = (event) => {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-                setShowDropdown(false);
-            }
+            setScrolling(window.scrollY > 90);
         };
 
         window.addEventListener('scroll', handleScroll);
-        document.addEventListener('mousedown', handleClickOutside);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
-            document.removeEventListener('mousedown', handleClickOutside);
         };
     }, []);
 
-    const toggleDropdown = () => {
-        setShowDropdown(!showDropdown);
+    const handleDropdownEnter = () => {
+        setShowDropdown(true);
+    };
+
+    const handleDropdownLeave = () => {
+        setShowDropdown(false);
+    };
+
+    const handleNestedDropdownEnter = () => {
+        setShowNestedDropdown(true);
+    };
+
+    const handleNestedDropdownLeave = () => {
+        setShowNestedDropdown(false);
+    };
+
+    const handleDropdownHover = (content) => {
+        setNestedDropdownContent(content);
+        setShowNestedDropdown(true);
     };
 
     return (
@@ -44,16 +52,33 @@ function Navbar() {
             <div className='flex space-x-4 text-navText font-[500] relative'>
                 <Link to="/" className={`hover:text-white ${location.pathname === '/' ? 'text-white' : ''}`}>Home</Link>
                 <Link to="/about" className={`hover:text-white ${location.pathname === '/about' ? 'text-white' : ''}`}>About us</Link>
-                <div className="relative" ref={dropdownRef}>
-                    <button onClick={toggleDropdown} className={`hover:text-white focus:outline-none ${location.pathname.startsWith('/products') ? 'text-white' : ''}`}>
+                <div className="relative" ref={dropdownRef} onMouseEnter={handleDropdownEnter} onMouseLeave={handleDropdownLeave}>
+                    <button className={`hover:text-white focus:outline-none ${location.pathname.startsWith('/products') ? 'text-white' : ''}`}>
                         <div className='flex justify-center items-center'>
                             <p>Products</p>
                             <MdOutlineArrowDropDown />
                         </div>
                     </button>
                     {showDropdown && (
-                        <div className="absolute top-full mt-2 bg-white shadow-lg rounded">
-                            <Link to="/products/bhashantar" className="block px-4 py-2 text-sm text-gray-800 hover:bg-bgLight rounded">Bhashantar</Link>
+                        <div className="absolute top-full bg-white shadow-lg w-32" onMouseEnter={handleNestedDropdownEnter} onMouseLeave={handleNestedDropdownLeave}>
+                            <div className='bg-gray-100 flex flex-col justify-center'>
+                                <button className="block px-4 py-2 text-sm text-gray-800 hover:bg-bgLight rounded" onMouseEnter={() => handleDropdownHover(["Bhashantar"])}>
+                                    Tensor AI
+                                </button>
+                                <button className="block px-4 py-2 text-sm text-gray-800 hover:bg-bgLight rounded" onMouseEnter={() => handleDropdownHover(["Xai Bot"])}>
+                                    Tensor LLM
+                                </button>
+                                <button className="block px-4 py-2 text-sm text-gray-800 hover:bg-bgLight rounded" onMouseEnter={() => handleDropdownHover(["Smurfur"])}>
+                                    Tensor Play
+                                </button>
+                            </div>
+                            {showNestedDropdown && (
+                                <div className="absolute top-0 left-full mt-0 bg-white w-28 h-full" ref={nestedDropdownRef}>
+                                    {nestedDropdownContent.map((item, index) => (
+                                        <Link key={index} to={`/products/${item.toLowerCase().replace(' ', '-')}`} className="block px-4 py-2 text-sm text-gray-800 hover:bg-bgLight rounded">{item}</Link>
+                                    ))}
+                                </div>
+                            )}
                         </div>
                     )}
                 </div>

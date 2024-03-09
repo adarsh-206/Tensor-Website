@@ -1,14 +1,15 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
 function SocialMediaIcons() {
     return (
         <div className="flex items-center space-x-4">
-            <SocialMediaIcon icon={<FaFacebookF />} link="#" />
-            <SocialMediaIcon icon={<FaTwitter />} link="#" />
-            <SocialMediaIcon icon={<FaInstagram />} link="#" />
             <SocialMediaIcon icon={<FaLinkedinIn />} link="#" />
+            <SocialMediaIcon icon={<FaXTwitter />} link="#" />
+            <SocialMediaIcon icon={<FaInstagram />} link="#" />
+            <SocialMediaIcon icon={<FaYoutube />} link="https://www.youtube.com/channel/UC29O8qlXwBrCaObjCmHJ8gg" />
         </div>
     );
 }

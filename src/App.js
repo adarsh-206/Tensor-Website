@@ -9,6 +9,8 @@ import Footer from './pages/Footer';
 import EachBlog from './pages/Blogs/EachBlog';
 import Bhashantar from './pages/products/Bhashantar';
 import UpArrowButton from './components/UpArrowButton';
+import SmurFur from './pages/products/SmurFur';
+import XaiBot from './pages/products/XaiBot';
 
 
 function App() {
@@ -22,7 +24,9 @@ function App() {
           <Route path="/blogs" element={<Blog />} />
           <Route path="/contact" element={<Contactus />} />
           <Route path="/blogs/:id" element={<EachBlog />} />
-          <Route path="/products/bhashantar" element={<Bhashantar />} />
+          <Route path="/products/Bhashantar" element={<Bhashantar />} />
+          <Route path="/products/xai-bot" element={<XaiBot />} />
+          <Route path="/products/smurfur" element={<SmurFur />} />
         </Routes>
         <Footer />
         <UpArrowButton />
